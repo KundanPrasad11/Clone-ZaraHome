@@ -1,0 +1,67 @@
+#ultimatenavcont{
+
+ 
+    border: 1px solid violet;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    position: fixed;
+    background-color: white;
+   
+ }
+
+#mainnavcheck{
+    border: 1px solid red;
+    width: 95%;
+    margin: auto;
+    margin-top: 40px;
+    
+}
+
+#zara{
+    font-size: 18px;
+   
+}
+
+#basketcheck{
+
+    float: right;
+  
+}
+
+#linesdiv{
+
+    display: flex;
+    margin-top: 40px;
+    
+}
+
+.hrdiv{
+    width: 33%;
+    color: rgb(189, 187, 187);
+    font-family: 'Kanit', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hrdiv hr{
+
+   border: 0;
+    border-bottom: 2px solid rgb(189, 187, 187);
+   
+}
+
+.highlight{
+
+    border: 1px solid blue;
+    color: black;
+    font-family: 'Secular One', sans-serif;
+   
+   
+}
+
+.highlight hr{
+
+   border-bottom: 2px solid black;
+}
