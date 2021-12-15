@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+    <!-- it is login symbol -->
+<button id="modallogin" class="btn">login</button>
+
+
+<!-- sign in part -->
+<div id="modalbox" class="modal">
+
+
+<div class="modalcontent">
+    
+
+
+   
+    <div id="cdiv1" class="rcust flex">
+    <form>
+
+        <h4>REGISTERED CUSTOMERS</h4>
+        <p class="regp">We will ask you for the necessary information to speed up the purchase process.
+        </p>
+        <P class="regp"> Can’t find your order? You might have purchased as a guest. Click<span><a id="here" href=""> here</a></span> and we’ll tell you how to find it.</P>
+        <input type="email" placeholder="E-mail" required class="inputcell reqlength" id="inputemail"/>
+        <input type="password" placeholder="Password" required class="inputcell reqlength" id="inputpass"/>
+        <p class="reqlength">Have you forgotten your password?</p>
+        <button id="loginbtn" class="buttn">LOG IN</button>
+     
+
+    </form>
+
+    </div>
+
+
+    <div id="cdiv2" class="ncust flex">
+      
+        <h4>NEW CUSTOMER  <span id="closingbtn" class="close">&times;</span></h4>
+        <button id="newaccountbtn" class="buttn">CEATE A NEW ACCOUNT</button>
+    </div>
+
+
+
+</div>
+
+
+
+</div>
+
+<!-- signup part -->
+
+
+
+<div id="modalbox1" class="modal1">
+
+
+<div class="modalcontent1">
+    <span id="closingbtn1" class="close1">&times;</span>
+   <p class="create">CREATE YOUR ZARA HOME ACCOUNT </p>
+     <div class="radiobox">
+         <input type="radio"class="radio" name="gp1" value="ind"/>
+         <lable for="individual" class="ver">Individual</lable>
+
+         <input type="radio" class="radio" name="gp1" value="com"/>
+         <lable for="company" class="ver">Company</lable>
+     </div>
+
+      <div class="cenform">
+       <form action="#">
+
+        <select class="counwidth inputcell">
+            <option>India</option>
+            <option>Brazil</option>
+            <option>Nepal</option>
+         </select>
+
+        <input type="text" placeholder="Name" class="counwidth inputcell" id="signname" required />
+         <input type="email" placeholder="E-mail" class="counwidth inputcell" id="signemail" required/>
+         <input type="password" placeholder="Password" class="counwidth inputcell" id="signpassword" required/>
+
+         <div  class="checkmargin">
+            <input type="checkbox"  class="checkb"/>
+            <lable for="checkbox"class="ver1">I have read and accept the privacy policy</lable><br>
+    
+            <input type="checkbox" class="checkb"/>
+            <lable for="checkbox" class="ver1">I would like to receive news, notifications and offers from <span id="extra">Zara Home</span>.</lable>
+
+            <button id="createaccount" class="csignupbtn">CREATE ACCOUNT</button>
+        </div>
+       </form>
+
+ 
+      </div>
+      
+
+      
+</div>
+
+
+
+</div>
+
+
+
+<!-- company part -->
+<div id="modalbox2" class="modal2">
+
+
+    <div class="modalcontent2">
+        <span id="closingbtn2" class="close2">&times;</span>
+       <p class="create">CREATE YOUR ZARA HOME ACCOUNT </p>
+         <div class="radiobox">
+             <input type="radio" class="radio" name="gp1" value="ind"/>
+             <lable for="individual" class="ver">Individual</lable>
+    
+             <input type="radio" class="radio" name="gp1" value="com" />
+             <lable for="company" class="ver">Company</lable>
+         </div>
+    
+          <div class="cenform">
+           <form action="#">
+    
+            <select  class="counwidth inputcell">
+                <option>India</option>
+                <option>Brazil</option>
+                <option>Nepal</option>
+             </select>
+    
+            <input type="text" placeholder="Company name" class="counwidth inputcell" required />
+            <input type="text" placeholder="VAT" class="counwidth inputcell" required />
+            <input type="text" placeholder="Name" class="counwidth inputcell" id="signname1" required />
+            <input type="text" placeholder="Surname(s)" class="counwidth inputcell" required />
+             <input type="email" placeholder="E-mail" class="counwidth inputcell" id="signemail1" required/>
+             <input type="password" placeholder="Password" class="counwidth inputcell" id="signpassword1" required/>
+    
+             <div  class="checkmargin">
+                <input type="checkbox"  class="checkb"/>
+                <lable for="checkbox"class="ver1">I have read and accept the privacy policy</lable><br>
+        
+                <input type="checkbox" class="checkb"/>
+                <lable for="checkbox" class="ver1">I would like to receive news, notifications and offers from <span id="extra">Zara Home</span>.</lable>
+      
+                <button id="createaccount1" class="csignupbtn">CREATE ACCOUNT</button>
+            </div>
+           </form>
+    
+     
+          </div>
+          
+    
+          
+    </div>
+    
+    
+    
+    </div>
+
+
+</body>
+</html>
+<script src="login.js"></script>
