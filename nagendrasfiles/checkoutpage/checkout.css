@@ -4,6 +4,7 @@
     margin: 0;
     
 } */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 #checkbodycont{
 
@@ -18,12 +19,11 @@
 #checkoutleftdiv{
     width: 70%;
     border: 1px solid blue;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
     font-size: 15px;
 }
 
-#checkoutleftdiv > h3 {
+#checkoutleftdiv > h3, #pricediv > h3 {
 
     font-size: 24px;
     font-weight: 400;
@@ -44,7 +44,7 @@ input[type="checkbox"] {
    box-sizing: border-box;
 }
 
-#checkoutleftdiv > hr {
+#checkoutleftdiv > hr,#pricediv > hr {
 
     border: 0;
     border-bottom: 1px solid rgb(189, 187, 187);
@@ -59,12 +59,7 @@ input[type="checkbox"] {
     margin-top: 20px;
 }
 
-#pricediv{
 
-    border: 1px solid blueviolet;
-    width: 25%;
-    height: 300px;
-}
 
 form{
     display: grid;
@@ -119,7 +114,7 @@ font-weight: 550;
    
 }
 
-#emergediv > div {
+#pinkadv {
 
     background-color:  #ffebea;
     padding: 10px;
@@ -187,4 +182,42 @@ font-weight: 550;
 
     transform:rotate(90deg);
     
+}
+
+#pricediv{
+
+    border: 1px solid blueviolet;
+    width: 25%;
+    height: 400px;
+    position: fixed;
+    right: 40px;
+    background-color: white;
+}
+
+#pricediv > div{
+
+    margin-top: 15px;
+    font-family: "Poppins", sans-serif;
+   font-size: 14px;
+}
+
+.prices{
+    float: right;
+}
+
+#pricediv > div:nth-child(6){
+
+    font-family: 'Kanit', sans-serif;
+    /* font-weight: bolder; */
+}
+
+#pricediv > p{
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    color: grey;
+}
+
+#pricediv > button {
+
+    width: 100%;
 }

@@ -7,18 +7,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="checkout.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400&family=Secular+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@200;300&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/28e3ee16ef.js" crossorigin="anonymous"></script>
     <body>
         <header>
-            <div id="ultimatenavcont">sagasgasgsagsdgsg</div>
+            <div id="ultimatenavcont"></div>
         </header>
     
-   
     <div id="checkbodycont">
         <div id="checkoutleftdiv">
             <h3 class="highlight" >STANDARD</h3>
@@ -46,20 +48,31 @@
                      <option value="India">India</option>
                  </select>
 
-                 <input type="text" placeholder="Email*">
-                 <input type="text" placeholder="Name">
-                 <input type="text" placeholder="Surname(s)">
+                 <input type="text" placeholder="Email*" id="billemail">
+                 <input type="text" placeholder="Name" id="billName">
+                 <input type="text" placeholder="Surname(s)" id="billsurname">
                  <input type="text" placeholder="Tax ID number">
                  <input type="text" placeholder="Province">
-                 <input type="text" placeholder="Address*">
+                 <input type="text" placeholder="Address*" id="billadd">
                  <input type="text" placeholder="More info">
-                 <input type="text" placeholder="Floor/door/etc.">
+                 <input type="text" placeholder="Floor/door/etc." id="billdoor">
                  <input type="text" placeholder="Postcode">
-                 <input type="text" placeholder="City*">
-                 <input type="text" placeholder="Telephone*">
+                 <input type="text" placeholder="City*" id="billcity">
+                 <input type="text" placeholder="Telephone*" id="billtele">
             </form>
          </div>
-       <div id="pricediv"></div>
+       <div id="pricediv">
+        <h3 class="highlight" >2 ITEMS</h3>
+        <hr>
+      
+        <div > <span>Total items: including tax</span> <span class="prices">45€</span></div>
+        <div><span>Delivery charges:</span> <span class="prices">45€</span></div>
+        <div><span>Import costs:</span> <span class="prices">45€</span></div>
+        <div id="totaldiv"><span>TOTAL:</span> <span class="prices">45€</span></div>
+        <p>DO YOU HAVE A PROMOTIONAL CODE? Enter it when you reach the payment page</p>
+
+        <button class="newaddbtn " id="addcontbtn">CONTINUE</button>
+       </div>
    </div>
    <div id="blackdiv">
          <div id="popdiv">
@@ -77,78 +90,34 @@
             <option value="Dominica">Dominica</option>
             <option value="India">India</option>
         </select>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Surname(s)">
+        <input type="text" placeholder="Name" id="delName">
+        <input type="text" placeholder="Surname(s)" id="delsurname">
         <input type="text" placeholder="Province">
-        <input type="text" placeholder="Address*">
+        <input type="text" placeholder="Address*" id="deladd">
         <input type="text" placeholder="More info">
-        <input type="text" placeholder="Floor/door/etc.">
+        <input type="text" placeholder="Floor/door/etc." id="deldoor">
         <input type="text" placeholder="Postcode">
-        <input type="text" placeholder="City*">
-        <input type="text" placeholder="Telephone*">
+        <input type="text" placeholder="City*" id="delcity">
+        <input type="text" placeholder="Telephone*" id="deltele">
        </form>
 
-       <button class="newaddbtn acceptbtn">ACCEPT</button>
+       <button class="newaddbtn acceptbtn" id="popacceptbtn">ACCEPT</button>
    </div>
    </div>
  
 </body>
 </html>
-<script type="module" >
+
+<script type="module"  >
 
 import navcheck from "./components/navbarcheck.js";
+import {pricediv} from "./components/pricediv.js";
 
 let cont = document.getElementById("ultimatenavcont");
         cont.innerHTML = navcheck();
-
-let changeptag = document.getElementById("addchange")
-const balckbox = document.getElementById("blackdiv");
-
-
- let popup  = (e) => {
-
-    if(e.target.checked){
-     
-        changeptag.innerText = "DELIVERY ADDRESS";
-    }else{
-
-        changeptag.innerText = "BILLING ADDRESS";
-    }
-
-    let deliverydiv = document.getElementById("emergediv");
-
-    let ptag = document.createElement("p");
-    ptag.innerText = "DELIVERY ADDRESS";
-    ptag.setAttribute("class", "highlight extras")
-
-    let newadd = document.createElement("button");
-    newadd.innerText = "NEW ADDRESS";
-    newadd.setAttribute("class", "newaddbtn")
-   
-    let advertizediv = document.createElement("div");
-     advertizediv.innerText = "Please add a delivery address";
-
-     deliverydiv.append(ptag, newadd, advertizediv)
-
-     newadd.addEventListener("click", () => {
-
-           balckbox.style.opacity = "1";
-           balckbox.style.pointerEvents ="auto";
-     });
- }
-
- 
-  document.getElementById("billing").addEventListener("change", popup);
- 
-
- let close = ( ) => {
-    
-    
-    balckbox.style.opacity = "0";
-           balckbox.style.pointerEvents ="none";
-    
- }
-
-
- document.getElementById("crossbtn").addEventListener("click", close);
+  
+// let rightdiv = document.getElementById("pricediv");
+//     rightdiv.innerHTML = pricediv();
 </script>
+
+<script src="checkout.js"></script>

@@ -18,15 +18,22 @@
     
 }
 
-#zara{
-    font-size: 18px;
+#zara img{
+   
+    width: 300px;
    
 }
 
 #basketcheck{
 
     float: right;
-  
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+#basketcheck > p:hover{
+
+    color: grey;
 }
 
 #linesdiv{
