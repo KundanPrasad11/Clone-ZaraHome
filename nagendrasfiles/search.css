@@ -1,0 +1,54 @@
+#searchdiv{
+
+    margin: auto;
+    border: 1px solid red;
+    margin-left: 5%;
+    margin-top: 100px;
+}
+
+#searchdiv button{
+
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    border: 0;
+    padding: 0;
+}
+
+#searchdiv button :hover{
+
+    background-color: #737179;
+}
+
+#searchdiv div{
+
+    background-color: black;
+    width: 40px;
+    height: 2px;
+    
+}
+
+#cross1{
+
+    transform:rotate(45deg);
+   
+}
+
+#cross2{
+
+    transform:rotate(90deg);
+    
+}
+
+#searchin{
+
+    border: 0;
+    outline: 0;
+    width: 90%;
+    height: 40px;
+    border-bottom: 1px solid black;
+    font-size: 30px;
+   text-transform: capitalize;
+
+}
