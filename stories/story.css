@@ -1,0 +1,178 @@
+
+
+
+
+#inav{
+    position:fixed;
+    top: 0;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100px;;
+    
+     
+    
+}
+.com{
+    margin-bottom: 150px;
+}
+#com1{
+    margin-bottom: 150px;
+}
+#com2{
+    margin-bottom: 150px;
+}
+#bodypart{
+    margin-top: 150px;
+    background-color: #f7f7f7;
+    
+}
+
+/* #topdiv{
+     border: 1px solid red;
+    width: 50%;
+    height: 400px;
+    margin: auto;
+} */
+
+#topdivp1{
+    /* border: 1px solid red; */
+    position: relative;
+    top: 100px;
+  text-align: center;
+       width: 50%;
+       height:400px;
+      margin: auto;
+    
+
+}
+#t1{
+  
+    font-size: 80px;
+    font-weight: 500;
+    font-family: 'Noto Serif Display', serif;
+    color:black;
+}
+#t2{
+    position: relative;
+    bottom: 60px;
+    font-size: 30px;
+    color:#595959;
+}
+#of{
+   font-style: italic; 
+}
+#one{
+    
+    width: 97%;
+    margin: auto;
+}
+img{
+    width: 100%;
+} 
+
+#two{
+    /* border: 1px solid red; */
+    width: 25%;
+    margin: auto;
+}
+#two>img{
+    width: 100%;
+    height: 100%;
+
+}
+#three{
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: auto;
+}
+#three>img{
+    width: 100%;
+    height: 100%;
+
+}
+
+#four{
+    display: flex;
+ 
+}
+#four #four1{
+    /* border: 1px solid red; */
+    width: 24%;
+    /* height: 400px; */
+    margin-left: 35%;
+}
+#four #four2{
+    /* border: 1px solid red; */
+    width: 24%;
+    margin-left: 10px;
+    
+}
+#five{
+    
+    width: 97%;
+    margin: auto;
+}
+#five>img{
+    width: 100%;
+} 
+
+.six{
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: auto;
+}
+.six>img{
+    width: 100%;
+    height: 100%;
+
+}
+.seven{
+    display: flex;
+}
+.seven .seven1{
+    /* border: 1px solid red; */
+    width: 24%;
+    /* height: 400px; */
+    margin-left: 35%;
+}
+.seven .seven2{
+    /* border: 1px solid red; */
+    width: 24%;
+    margin-left: 10px;
+    
+}
+
+#eight{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#eight1{
+    /* border: 1px solid red; */
+    width: 52%;
+    
+}
+#eight2{
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 500px;
+    margin-top: 150px;
+ 
+}
+#nine{
+    
+    width: 97%;
+    margin: auto;
+}
+img{
+    width: 100%;
+} 
+#ten{
+    width: 25%;
+    margin:auto
+}
+#eleven{
+    border: 1px solid red;
+    width: 100%;
+    height: 200px;
+}
