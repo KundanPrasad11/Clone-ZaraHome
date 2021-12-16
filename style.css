@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Noto+Serif+Display:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #1e1e1e;
+    font-family: Arial, 'Lucida Sans', 'Lucida Sans Unicode';
+}
+
+#home_content{
+    position: relative;
+    background-image: url("https://static.zarahome.net/8/static4/itxwebstandard/dto_imagen/home/slider/desktop/portraits.jpg?20211214140803&imwidth=1071&impolicy=zarahome-itxmedium");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 800px;
+}
+.home_img_title, .home_img_title>span {
+    font-family: 'Noto Serif Display', serif;
+    position: absolute;
+    left: 50%;
+    top: 37%;
+    transform: translate(-50%, 0);
+    font-size: 5rem;
+    text-align: left;
+    color: black;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+    margin-top: 50px;
+    padding: 50px;
+    border-top: 1px dashed #ddd;
+}
+#footer p {
+    text-align: center;
+    font-weight: 400;
+}
+#foo_container {
+    width: 50%;
+    margin: 0px auto;
+    padding: 20px 0 45px 0;
+}
+ /* #############footer newsletter############# */
+#newsletter {
+    margin: 10px auto 0 auto;
+    padding: 2px;  
+}
+#foo_task {
+    color: #888;
+    line-height: 1px;
+    transform: scale(0.8, 0.9);
+}
+#foo_input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #1e1e1e;
+    width: 100%;
+    padding-top: 0px;
+}
+#foo_input:focus {
+    padding: 12px 0;
+    border-bottom: 2px solid #1e1e1e;
+    transition:border-bottom .2s, padding .3s;
+}
+
+/* #############footer social############# */
+#foo_social {
+    margin : 60px auto;
+    width: 80%;
+    display: flex;
+    gap: 10px;
+}
+#foo_social p {
+    color: #444;
+}
+#foo_social_left,
+#foo_social_right {
+    width: 50%;
+}
+.foo_social_icon {
+    display: flex;
+    gap: 5%;
+    padding: 25px 0;
+}
+.foo_social_icon > div:hover {
+    opacity: 0.6;
+}
+.foo_social_icon_right {
+    width: 33%;
+    margin: auto;
+}
+#foo_social img {
+    width: 70%;   
+}
+
+/* #############foo_about############# */
+#foo_about {
+    display: flex;
+    padding: 0 40px;
+}
+.foo_about_items {
+    width: 33%;
+}
+.foo_about_header {
+    text-decoration: underline;
+    text-align: center;
+    line-height: 40px;
+}
+.foo_about_list {
+    list-style-type: none;
+    text-align: center;
+}
+.foo_about_list > li {
+    font-size: 10px;
+    color: #777;
+    line-height: 20px;
+    font-weight: 400;
+    /* transform: scaleY(.9); */
+    letter-spacing:0.28px;
+}
+.foo_about_list > li:hover {
+    text-decoration: underline;
+    color: #222;
+}
