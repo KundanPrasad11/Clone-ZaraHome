@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>navbar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        #navB {
+            top: 0;
+            left: 0;
+            border: 1px solid transparent;
+            width: 100%;
+            height: 160px;
+            position: sticky;
+            transition: 0.5s;
+        }
+
+        #navB:hover {
+            background-color: white;
+        }
+
+        #logo {
+            border: 1px solid transparent;
+            width: 23%;
+            height: 50%;
+            margin-top: 2%;
+            margin-left: 1%;
+            display: inline-block;
+        }
+        #img1{
+            width: 21%;
+            height: 22%;
+            display: inline-block;
+            border: 1px solid transparent;
+            position: absolute;
+            left: 60px;
+            transition: left 0.7s ease;
+        }
+        #bar{
+            vertical-align: top;
+            margin-top: 5px;
+            font-size: 22px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        #logo:hover > #bar{
+            color: white;
+        }
+        #logo:hover > #img1{
+            left: 10px;
+        }
+
+        #sear {
+            display: inline-block;
+            width: 17%;
+            height: 31%;
+            border: 1px solid transparent;
+            vertical-align: top;
+            margin-top: 2%;
+            margin-left: 25%;
+        }
+
+        #sear>div {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            display: inline-block;
+        }
+
+        #sear>div:hover {
+            color: #888b8d;
+        }
+
+        #Rside {
+            border: 1px solid transparent;
+            display: inline-block;
+            width: 10%;
+            height: 25%;
+            position: absolute;
+            right: 10px;
+            margin-top: 2.5%;
+        }
+
+        #Rside>span {
+            margin: 15px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+        }
+
+        #Rside2{
+            border: 1px solid transparent;
+            position: absolute;
+            right: 0px;
+            top: 125px;
+            width: 16.3%;
+            height: 12%;
+            font-family: 'Poppins', sans-serif;
+            font-size: 10px;
+        }
+
+
+        #Rside2 > span {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .middle {
+            position: absolute;
+            top: 115px;
+            left: -300px;
+            font-family: 'Poppins', sans-serif;
+            transition: left 0.5s ease;
+            background-color: white;
+        }
+
+        #logo:hover .middle {
+            left: 0px;
+        }
+
+        .menu {
+            width: 300px;
+            height: 700px;
+            overflow: hidden;
+        }
+
+        .item {
+            overflow: hidden;
+        }
+
+        .btn {
+            display: block;
+            padding: 1px 20px;
+            font-weight: 600;
+            font-size: 18px;
+            background: white;
+            color: rgb(48, 46, 46);
+            position: relative;
+            letter-spacing: 1px;
+        }
+
+        .ubtn {
+            display: block;
+            padding: 1px 20px;
+            font-weight: 600;
+            font-size: 18px;
+            background: white;
+            color: rgb(48, 46, 46);
+            position: relative;
+            letter-spacing: 1px;
+        }
+
+        .item a:hover {
+            color: #888b8d;
+        }
+
+        .smenu {
+            background: white;
+            overflow: hidden;
+            transition: max-height 0.3s;
+            max-height: 0;
+        }
+
+        .sbmenu {
+            background: white;
+            overflow: hidden;
+            transition: max-height 0.3s;
+            max-height: 0;
+        }
+
+        .smenu a {
+            display: block;
+            padding: 1px 25px;
+            color: black;
+            font-size: 14px;
+            margin: 4px 15px;
+            position: relative;
+        }
+
+        .sbmenu>a {
+            display: block;
+            padding: 1px 25px;
+            color: black;
+            font-size: 12px;
+            margin: 4px 40px;
+            position: relative;
+        }
+
+        .smenu a:hover {
+            color: #888b8d;
+        }
+
+        .item:target .smenu {
+            max-height: 50em;
+        }
+
+        .smenu:target .sbmenu {
+            max-height: 50em;
+        }
+
+        .alast {
+            font-weight: normal;
+            font-size: 15px;
+        }
+
+        .salast>a {
+            font-size: 13px;
+            padding: 0px 26px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navB">
+        <div id="logo">
+            <div class="middle">
+                <div class="menu">
+                    <li class="item" id='new'>
+                        <a href="#new" class="btn">NEW IN</a>
+                        <div class="smenu">
+                            <a href="#">COLLECTION</a>
+                            <a href="#">KIDS</a>
+                            <a href="#">GATHERING TOGETHER</a>
+                        </div>
+                    </li>
+
+                    <li class="item" id="bedroom">
+                        <a href="#bedroom" class="btn">BEDROOM</a>
+                        <div class="smenu">
+                            <a href="#">DUVET COVERS</a>
+                            <a href="#">FLAT SHEETS</a>
+                            <a href="#">PILLOW CASES</a>
+                            <a href="#">FITTED SHEETS</a>
+                            <a href="#">QUILTS</a>
+                            <a href="#">BEDSPREADS</a>
+                            <a href="#">BLANKETS</a>
+                            <a href="#">CUSHIONS</a>
+                            <a href="#">CURTAINS</a>
+                        </div>
+                    </li>
+                    <li class="item" id="cloth">
+                        <a href="#cloth" class="btn">CLOTHING & FOOTWEAR</a>
+                        <div class="smenu">
+                            <a href="#">WOMEN</a>
+                            <a href="#">MEN</a>
+                            <a href="#">FOOTWEAR</a>
+                            <a href="#">ACCESSORIES</a>
+                        </div>
+                    </li>
+
+                    <li class="item" id="living">
+                        <a href="#living" class="btn">LIVING ROOM</a>
+                        <div class="smenu">
+                            <a href="#">FURNITURE & RUGS</a>
+                            <a href="#">PHOTO FRAMES</a>
+                            <a href="#">BASKETS</a>
+                            <a href="#">VASES</a>
+                            <a href="#">DECORATIVE CUSHIONS</a>
+                            <a href="#">CURTAINS</a>
+                            <a href="#">DOOR KNOBS</a>
+                            <a href="#">DECOR ACCESSORIES</a>
+                        </div>
+                    </li>
+                    <li class="item" id="dining">
+                        <a href="#dining" class="btn">DINING</a>
+                        <div class="smenu">
+                            <a href="#">TABLECLOTHS</a>
+                            <a href="#">NAPKINS</a>
+                            <a href="#">PLACEMATS</a>
+                            <a href="#">TABLE RUNNERS</a>
+                            <a href="#">KITCHEN TEXTILES</a>
+                            <a href="#">TABLE ACCESSORIES</a>
+                        </div>
+                    </li>
+                    <li class="item" id="bathroom">
+                        <a href="#bathroom" class="btn">BATHROOM</a>
+                        <div class="smenu">
+                            <a href="#">TOWELS</a>
+                            <a href="#">BATHROBES</a>
+                            <a href="#">BATHROOM ACCESSORIES</a>
+                        </div>
+                    </li>
+                    <li class="item" id="kids">
+                        <a href="#kids" class="btn">KIDS</a>
+                        <div class="smenu" id="und">
+                            <a href="#und" class="ubtn">BEDROOM</a>
+                            <div class="sbmenu">
+                                <a href="#">DUVET COVERS</a>
+                                <a href="#">FLAT SHEETS</a>
+                                <a href="#">PILLOW CASES</a>
+                                <a href="#">FITTED SHEETS</a>
+                                <a href="#">QUILTS</a>
+                                <a href="#">BEDSPREADS</a>
+                                <a href="#">BLANKETS</a>
+                                <a href="#">CUSHIONS</a>
+                                <a href="#">CURTAINS</a>
+                            </div>
+                            <a href="#">BATHROOM</a>
+                            <a href="#">FOR DECORATING</a>
+                            <a href="#">OFF FOR A STROLL</a>
+                        </div>
+                    </li>
+                    <li class="item" id="stories">
+                        <a href="#stories" class="btn">STORIES</a>
+                        <div class="smenu">
+                            <a href="#">GATHERING TOGETHER</a>
+                            <a href="#">AW21 CAMPAIGN</a>
+                            <a href="#">AT HOME WITH HELOISE BRION</a>
+                            <a href="#">KIDS, THE EDIT</a>
+                            <a href="#">INSIDE OUT COLOURS</a>
+                            <a href="#">PORTRAITS OF A HOME</a>
+                        </div>
+                    </li>
+
+                    <li class="item" id="info">
+                        <a href="#info" class="btn alast">+ INFO</a>
+                        <div class="smenu salast">
+                            <a href="#">HELP</a>
+                            <a href="#">CONTACT US</a>
+                            <a href="#">GUEST PURCHASE</a>
+                        </div>
+                    </li>
+                </div>
+            </div>
+            <div id="bar"><i class="fas fa-bars"></i></div>
+            <div id="img1"><img width="100%" height="100%"
+                src="https://static.zarahome.net/8/static4/itxwebstandard/logo/logo.png?t=202112110318092070005127"
+                alt="Zara Logo"></div>
+        </div>
+        <div id="sear">
+            <div>SEARCH</div>
+            <span>__________________</span>
+        </div>
+        <div id="Rside">
+            <span>LOG IN</span>
+            <span>0</span>
+        </div>
+        <div id="Rside2">64 ITEMS &nbsp; | &nbsp; VIEW &nbsp; 2 &nbsp; <span>4</span> &nbsp; | &nbsp; + FILTERS</div>
+    </div>
+    <div><img width="100%" src="https://static.zarahome.net/8/static4/itxwebstandard/dto_imagen/home/slider/desktop/portraits.jpg?20211215110500&imwidth=1366&impolicy=zarahome-itxmedium" alt=""></div>
+    <div><img width="100%" src="https://static.zarahome.net/8/static4/itxwebstandard/dto_imagen/home/slider/desktop/portraits.jpg?20211215110500&imwidth=1366&impolicy=zarahome-itxmedium" alt=""></div>
+    <div><img width="100%" src="https://static.zarahome.net/8/static4/itxwebstandard/dto_imagen/home/slider/desktop/portraits.jpg?20211215110500&imwidth=1366&impolicy=zarahome-itxmedium" alt=""></div>
+</body>
+
+</html>
