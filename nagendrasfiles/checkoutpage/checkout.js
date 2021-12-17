@@ -176,7 +176,8 @@ const testbtn = document.getElementById("addcontbtn");
 
 
      //function of displacing prices in pricediv ------- from local storage ----->
-      
+     JSON.parse( localStorage.setItem("Total", 999)); 
+
      let totalprice = JSON.parse( localStorage.getItem("Total") );
      document.getElementById("totallocal").innerText = totalprice + " €";
      totalprice += 45 + 56.43;

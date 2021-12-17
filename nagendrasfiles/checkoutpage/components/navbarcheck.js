@@ -8,8 +8,8 @@ function navcheck () {
             <span id="basketcheck"> <p><i class="fas fa-shopping-bag"> &nbsp;</i>BASKET ( )</p></span>
         </nav>
         <div id="linesdiv">
-            <div class="highlight hrdiv"><p>1.DELIVERY</p><hr></div>
-            <div class="hrdiv"><p>2.PAYMENT</p><hr></div>
+            <div class="highlight hrdiv" id ="deliverynavdiv"><p>1.DELIVERY</p><hr></div>
+            <div class="hrdiv" id ="paymentnavdiv"><p>2.PAYMENT</p><hr></div>
             <div  class="hrdiv"><p>3.SUMMARY</p><hr></div>
         </div>
 
