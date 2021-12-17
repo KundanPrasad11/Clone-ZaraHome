@@ -10,7 +10,7 @@ function navcheck () {
         <div id="linesdiv">
             <div class="highlight hrdiv" id ="deliverynavdiv"><p>1.DELIVERY</p><hr></div>
             <div class="hrdiv" id ="paymentnavdiv"><p>2.PAYMENT</p><hr></div>
-            <div  class="hrdiv"><p>3.SUMMARY</p><hr></div>
+            <div  class="hrdiv" id="summarynavdiv"><p>3.SUMMARY</p><hr></div>
         </div>
 
     </div>

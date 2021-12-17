@@ -57,6 +57,7 @@ function couponCode() {
         document.querySelector('#coupon').style.display = "none";
 
         changetotal();
+
     } else {
         document.getElementById('apply').style.display = "none";
         document.getElementById('oops').style.display = "block";
@@ -72,6 +73,8 @@ function continuePay() {
         cardYear: cYearI.value,
     }
     localStorage.setItem("cardPaymentDet", JSON.stringify(cardDetails));
+
+    window.location.href = "../summerypages/summery.html";
 }
 
 
@@ -92,4 +95,6 @@ function changetotal() {
    total -= total * 0.2;
 
    sum.innerHTML = total +  "€*";
+
+   localStorage.setItem("CouponFlag",JSON.stringify( "True"));
 }
