@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../checkoutpage/checkout.css">
+    <link rel="stylesheet" href="./payment.css">
+    <link rel="stylesheet" href="../checkoutpage/styles/navbar.css">
+</head>
+<body>
+    <header>
+        <div id="ultimatenavcont"></div>
+    </header>
+     
+    <div id="checkbodycont">
+        <div id="checkoutleftdiv">
+            <!-- <h3 class="highlight" >STANDARD</h3>
+            <hr>
+           
+            <input type="radio" ><span> The estimated delivery time will be between 7-10 working days, depending on the delivery address.</span> <span class="delcharge">45.00 € </span>
+            <div id="emergediv"></div>
+            <p class="highlight extras" id="addchange">DELIVERY ADDRESS</p>
+            <input type="checkbox" id="billing" checked><label for="" id="billinglabel">Use as billing address</label> 
+           
+          <div id="dummybillnulldiv">
+            <div class="radiodiv"> &emsp; <input type="radio"><label for="">Individual</label> &emsp; <input type="radio"> <label for="">Company</label>
+            </div>
+
+            <form action="">
+                 <select name="" id="">
+                     <option value="tee">-------</option>
+                     <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                     <option value="Anguilla">Anguilla</option>
+                     <option value="American Samoa">American Samoa</option>
+                     <option value="Barbados">Barbados</option>
+                     <option value="Burkina Faso">Burkina Faso</option>
+                     <option value="Cape Verde">Cape Verde</option>
+                     <option value="Cocos Islands">Cocos Islands</option>
+                     <option value="Dominica">Dominica</option>
+                     <option value="India">India</option>
+                 </select>
+
+                 <input type="text" placeholder="Email*" id="billemail">
+                 <input type="text" placeholder="Name" id="billName">
+                 <input type="text" placeholder="Surname(s)" id="billsurname">
+                 <input type="text" placeholder="Tax ID number">
+                 <input type="text" placeholder="Province">
+                 <input type="text" placeholder="Address*" id="billadd">
+                 <input type="text" placeholder="More info">
+                 <input type="text" placeholder="Floor/door/etc." id="billdoor">
+                 <input type="text" placeholder="Postcode">
+                 <input type="text" placeholder="City*" id="billcity">
+                 <input type="text" placeholder="Telephone*" id="billtele">
+            </form> -->
+          </div>
+          <!-- <div id="extradivbillblock"></div>   -->
+         </div>
+       <div id="pricediv">
+        <h3 class="highlight" >2 ITEMS</h3>
+        <hr>
+      
+        <div > <span>Total items: including tax</span> <span class="prices" id="totallocal">45€</span></div>
+        <div><span>Delivery charges:</span> <span class="prices">45€</span></div>
+        <div><span>Import costs:</span> <span class="prices">56.43 € </span></div>
+        <div id="totaldiv"><span>TOTAL:</span> <span class="prices" id="oritotal">45€</span></div>
+        <p>DO YOU HAVE A PROMOTIONAL CODE? Enter it when you reach the payment page</p>
+
+        <button class="newaddbtn " id="addcontbtn">CONTINUE</button>
+       </div>
+   </div>
+
+ 
+
+</body>
+</html>
+
+<script type="module">
+import navcheck from "../checkoutpage/components/navbarcheck.js";
+
+let cont = document.getElementById("ultimatenavcont");
+        cont.innerHTML = navcheck();
+
+        document.getElementById("paymentnavdiv").setAttribute("class", "highlight hrdiv")
+       let deldiv =  document.getElementById("deliverynavdiv");
+
+        deldiv.addEventListener("click", redirect);
+
+        function redirect () {
+
+            window.location.href= "../checkoutpage/checkout.html";
+        }
+</script>
+
+<script src="payment.js"></script>
