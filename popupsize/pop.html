@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pop.css">
+</head>
+<body>
+    <a id="sizeguide" href="">sizeguide</a>
+<div id="popbox" class="popsize">
+    <div class="popcontent">
+       <p><span id="closingsize" class="close">&times;</span></p>
+       <p id="duet"class=popcom >DUVET COVER (WIDTH X LENGTH)</p>
+        <hr style="margin: auto;margin-top: 8px;">
+        <div id="popflex">
+
+             <div class="popflex1" >
+                 <p class="popcom">STAN.COT</p>
+                 <p class="popcom1">100x120cm</p>
+                 <p class="popcom">DOUBLE</p>
+                 <p class="popcom1">220x220cm</p>
+                 <p class="popcom">EMPEROR</p>
+                 <p class="popcom1">290x260cm</p>
+             </div>
+             <div class="popflex1" >
+                <p class="popcom">SINGLE</p>
+                <p class="popcom1">150x220cm</p>
+                <p class="popcom">KING</p>
+                <p class="popcom1">240x220cm</p>
+              
+            </div>
+            <div class="popflex1" >
+                <p class="popcom">DOUBLE</p>
+                <p class="popcom1">220x220cm</p>
+                <p class="popcom">SUPERKING</p>
+                <p class="popcom1">260x240cm</p>
+            
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+</body>
+</html>
+<script>
+let popbox=document.getElementById("popbox")
+
+let sizeguide=document.getElementById("sizeguide")
+let closingsize=document.getElementById("closingsize")
+
+// for open popup
+let sizeguideopen=(e)=>{
+    e.preventDefault()
+    popbox.style.display="block"
+}
+
+sizeguide.addEventListener("click",sizeguideopen)
+
+// for closing popup
+let sizeguideclose=()=>{
+    popbox.style.display="none"
+}
+closingsize.addEventListener("click",sizeguideclose)
+
+// clicing outside it disappear
+let outsideclick=(e)=>{
+    if(e.target == popbox){
+        popbox.style.display="none"
+    }
+}
+window.addEventListener("click",outsideclick)
+</script>
