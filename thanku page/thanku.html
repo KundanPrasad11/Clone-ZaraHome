@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<style>
+    #thanku{
+
+    width: 45%;
+    height: 400px;
+ position: absolute;
+ top: 30%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ text-align: center;
+background: rgba(145, 86, 86, 0.1);
+ color: green;
+
+}
+.loading{
+    display: flex;
+    justify-content: center;
+  margin-top: 10%;
+
+}
+.loading::after{
+    content: "";
+    width: 90px;
+    height: 90px;
+    margin-right: 50px;
+background: green;
+    opacity: .4;
+    /* border: 10px solid #dddddd;
+    border-top-color: #009579;  */
+    border-radius: 50%;
+    animation:loading 1s alternate  infinite ; 
+
+} 
+
+
+@keyframes loading {
+
+    to {
+        opacity: .8;
+        transform:scale(1.75) ;
+    }
+}
+.order{
+    margin-top: 60px;
+    margin-left: 0px;
+     font-family: sans-serif;
+     font-weight: 600;
+    font-size: 25px;
+}
+.order1{
+
+    margin-top: 8px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+#correct{
+    position: relative;
+    top: 23px;
+    left: 70px;
+    color: green;
+    font-size: 45px;
+
+}
+.order:hover{
+    font-size: 30px;
+    opacity: .5;
+}
+</style>
+
+
+
+</head>
+<body>
+    
+
+
+<div id="thanku">
+
+    <div class="loading">
+     <span id="correct"><i class="fas fa-check"></i></span>
+    </div>
+
+    <div .hover-order>
+        <p class="order">Order placed successfully!<span>  <p class="order order1">Thanku.</p></span></p>
+    </div>
+ 
+</div>
+
+
+</body>
+</html>
