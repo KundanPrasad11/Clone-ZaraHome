@@ -9,7 +9,7 @@
 #checkbodycont{
 
     display: flex;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 95%;
     margin: auto;
     justify-content: space-between;
@@ -18,7 +18,7 @@
 
 #checkoutleftdiv{
     width: 70%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     font-family: "Poppins", sans-serif;
     font-size: 15px;
 }
@@ -114,7 +114,7 @@ font-weight: 550;
    
 }
 
-#pinkadv {
+.pinkadv {
 
     background-color:  #ffebea;
     padding: 10px;
@@ -125,7 +125,7 @@ font-weight: 550;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
    opacity: 0;
    pointer-events: none;
     position: fixed;
@@ -186,7 +186,7 @@ font-weight: 550;
 
 #pricediv{
 
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
     width: 25%;
     height: 400px;
     position: fixed;
@@ -220,4 +220,11 @@ font-weight: 550;
 #pricediv > button {
 
     width: 100%;
+}
+
+.newdelblock{
+
+   width: fit-content;
+    border: 1px solid black;
+    margin-top: 30px;
 }

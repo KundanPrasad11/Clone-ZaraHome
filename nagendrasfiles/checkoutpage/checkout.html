@@ -29,8 +29,9 @@
             <input type="radio" ><span> The estimated delivery time will be between 7-10 working days, depending on the delivery address.</span> <span class="delcharge">45.00 € </span>
             <div id="emergediv"></div>
             <p class="highlight extras" id="addchange">DELIVERY ADDRESS</p>
-            <input type="checkbox" id="billing" checked><label for="">Use as billing address</label> 
+            <input type="checkbox" id="billing" checked><label for="" id="billinglabel">Use as billing address</label> 
            
+          <div id="dummybillnulldiv">
             <div class="radiodiv"> &emsp; <input type="radio"><label for="">Individual</label> &emsp; <input type="radio"> <label for="">Company</label>
             </div>
 
@@ -60,15 +61,17 @@
                  <input type="text" placeholder="City*" id="billcity">
                  <input type="text" placeholder="Telephone*" id="billtele">
             </form>
+          </div>
+          <div id="extradivbillblock"></div>  
          </div>
        <div id="pricediv">
         <h3 class="highlight" >2 ITEMS</h3>
         <hr>
       
-        <div > <span>Total items: including tax</span> <span class="prices">45€</span></div>
+        <div > <span>Total items: including tax</span> <span class="prices" id="totallocal">45€</span></div>
         <div><span>Delivery charges:</span> <span class="prices">45€</span></div>
-        <div><span>Import costs:</span> <span class="prices">45€</span></div>
-        <div id="totaldiv"><span>TOTAL:</span> <span class="prices">45€</span></div>
+        <div><span>Import costs:</span> <span class="prices">56.43 € </span></div>
+        <div id="totaldiv"><span>TOTAL:</span> <span class="prices" id="oritotal">45€</span></div>
         <p>DO YOU HAVE A PROMOTIONAL CODE? Enter it when you reach the payment page</p>
 
         <button class="newaddbtn " id="addcontbtn">CONTINUE</button>
@@ -118,6 +121,8 @@ let cont = document.getElementById("ultimatenavcont");
   
 // let rightdiv = document.getElementById("pricediv");
 //     rightdiv.innerHTML = pricediv();
+ 
+
 </script>
 
 <script src="checkout.js"></script>

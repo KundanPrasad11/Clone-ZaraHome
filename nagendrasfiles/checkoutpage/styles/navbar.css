@@ -1,7 +1,7 @@
 #ultimatenavcont{
 
  
-    border: 1px solid violet;
+    /* border: 1px solid violet; */
     width: 100%;
     position: absolute;
     top: 0;
@@ -11,7 +11,7 @@
  }
 
 #mainnavcheck{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 95%;
     margin: auto;
     margin-top: 40px;
@@ -61,7 +61,7 @@
 
 .highlight{
 
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     color: black;
     font-family: 'Secular One', sans-serif;
    

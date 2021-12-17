@@ -5,16 +5,32 @@ let changeptag = document.getElementById("addchange")
 const balckbox = document.getElementById("blackdiv");
 let deliverydiv = document.getElementById("emergediv");
 const dellocal =JSON.parse ( localStorage.getItem("Delivery"));
+const billlocal =JSON.parse ( localStorage.getItem("Billing"));
+let advertizediv = document.createElement("div");
+let outblock = document.getElementById("extradivbillblock");
 
+if(billlocal !== null){
 
- let popup  = (e) => {
+   displayboxes(billlocal);
+   document.getElementById("dummybillnulldiv").style.display = "none";
+   document.getElementById("billinglabel").innerText = "Send to the billing address";
+}
 
-    
+// this is checkbox  function------------->
+ let popup  = (e) => { 
 
     if(e.target.checked){
      
         changeptag.innerText = "DELIVERY ADDRESS";
         deliverydiv.innerHTML = null;
+         console.log("herer at checked")
+       
+        if(billlocal !== null){
+              
+         displayboxes(billlocal);
+         console.log(billlocal)
+           document.getElementById("dummybillnulldiv").style.display = "none";
+        }
     }else{
 
         changeptag.innerText = "BILLING ADDRESS";
@@ -22,8 +38,6 @@ const dellocal =JSON.parse ( localStorage.getItem("Delivery"));
         
      deliverydiv.innerHTML = null;
 
-    
-     
      
     let ptag = document.createElement("p");
     ptag.innerText = "DELIVERY ADDRESS";
@@ -40,7 +54,7 @@ const dellocal =JSON.parse ( localStorage.getItem("Delivery"));
      if(dellocal == null){
          
         
-      let advertizediv = document.createElement("div");
+      
       advertizediv.innerText = "Please add a delivery address";
       advertizediv.setAttribute("class", "pinkadv")
       deliverydiv.append( advertizediv);
@@ -63,10 +77,10 @@ const dellocal =JSON.parse ( localStorage.getItem("Delivery"));
     
  }
 
- //close function 
+ 
   document.getElementById("billing").addEventListener("change", popup);
  
-
+//close function ------------------->
  let close = ( ) => {
     
     
@@ -97,7 +111,9 @@ const dellocal =JSON.parse ( localStorage.getItem("Delivery"));
 
     localStorage.setItem("Delivery", JSON.stringify( deladdress));
     close();
-    displayboxes(dellocal);
+    advertizediv.style.display = "none";
+  
+    displayboxes(deladdress);
 
  }
  document.getElementById("popacceptbtn").addEventListener("click", store);
@@ -116,37 +132,60 @@ const dellocal =JSON.parse ( localStorage.getItem("Delivery"));
    }
 
    localStorage.setItem("Billing", JSON.stringify( billaddress));
+
+   window.location.href = "../paymentpages/payment.html";
 }
 const testbtn = document.getElementById("addcontbtn");
      testbtn.addEventListener("click", storebill);
 
+//<--------------------continue button top ------------------>
 
      function displayboxes (data) {
  console.log("hererearasfaf")
-         let div = document.createElement("div");
-          
+         let divv = document.createElement("div");
+          divv.setAttribute("class", "newdelblock");
+
         let ptag1 = document.createElement("p");
         ptag1.innerText = data.Name + " " + data.Surname;
 
         let ptag2 = document.createElement("p");
-        ptag1.innerText = data.Doorno;
+        ptag2.innerText = data.Doorno;
 
         let ptag3 = document.createElement("p");
-        ptag1.innerText = data.Address;
+        ptag3.innerText = data.Address;
 
         let ptag4 = document.createElement("p");
-        ptag1.innerText = data.City;
+        ptag4.innerText = data.City;
 
         let ptag5 = document.createElement("p");
-        ptag1.innerText = data.Telephone;
+        ptag5.innerText = data.Telephone;
          
-        div.append(ptag1, ptag2, ptag3,ptag4, ptag5)
+        divv.append(ptag1, ptag2, ptag3,ptag4, ptag5)
         if(data.Type == "Delivery"){
 
-            deliverydiv.append(div)
+            deliverydiv.append(divv)
+        }else{
+             
+        
+            outblock.innerHTML = null;
+            outblock.append(divv);
         }
 
-        console.log(deliverydiv)
+        console.log(divv)
      }
 
+
+     //function of displacing prices in pricediv ------- from local storage ----->
+      
+     let totalprice = JSON.parse( localStorage.getItem("Total") );
+     document.getElementById("totallocal").innerText = totalprice + " €";
+     totalprice += 45 + 56.43;
+
+     localStorage.setItem("Totalchekout", totalprice);
+     document.getElementById("oritotal").innerText = totalprice + " €";
+
+
+
+
+   
    
