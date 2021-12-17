@@ -31,7 +31,13 @@ function couponCode(){
 }
 
 let sum = document.getElementById("rText2");
-let total =JSON.parse ( localStorage.getItem("Totalchekout") );
+let total =JSON.parse ( localStorage.getItem("Totalpayment") );
+console.log(total)
+// if(total == null){
+
+//     total =  JSON.parse ( localStorage.getItem("Totalchekout") );
+//     console.log(total)
+// }
 
 sum.innerHTML = total +  "€*";
 

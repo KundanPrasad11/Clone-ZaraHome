@@ -90,11 +90,14 @@ let itemstotal = document.getElementById("rText1");
 const totalitemslocal =JSON.parse ( localStorage.getItem("Total"));
 itemstotal.innerText = totalitemslocal + "€";
 
+localStorage.setItem("Totalpayment",JSON.stringify( total));
+
 function changetotal() {
 
    total -= total * 0.2;
 
    sum.innerHTML = total +  "€*";
-
+   
+   localStorage.setItem("Totalpayment",JSON.stringify( total));
    localStorage.setItem("CouponFlag",JSON.stringify( "True"));
 }
