@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="summery.css">
+    <title>Summery</title>
+</head>
+<body>
+    <div id="StanD">
+        <div id="head">STANDARD</div>
+        <hr>
+        <div id="staAdd"></div>
+        <div id="staAdd"></div>
+        <button>CHANGE</button>
+        <div id="head">PAYMENT</div>
+        <hr>
+        <div class="cardOpt">
+            <div class="card-container">
+                <div class="front">
+                    <img id="mapI" src="images/map.png" alt="">
+                    <div class="image">
+                        <img src="images/chip.png" alt="">
+                        <img src="images/visa.png" alt="">
+                    </div>
+                    <div class="card-number-box">0000&nbsp;0000&nbsp;0000&nbsp;0000</div>
+                    <div class="flexbox">
+                        <div class="mbox">
+                            <span>Card Holder</span>
+                            <div class="card-holder-name">Full name</div>
+                        </div>
+                        <div class="mbox">
+                            <span>Expiry</span>
+                            <div class="expiration">
+                                <span class="exp-month">MM /</span>
+                                <span class="exp-year">YY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>CHANGE</button>
+        <div id="head">ITEMS</div>
+        <hr>
+        <div id="item"></div>
+        <div id="itemDet">
+            <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/089/300/6102089300_2_3_5.jpg?t=1629302155775" alt="">
+            <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/089/300/6102089300_2_2_5.jpg?t=1629302155775" alt="">
+            <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/091/300/6102091300_2_5_5.jpg?t=1628516845271" alt="">
+            <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/089/300/6102089300_1_1_5.jpg?t=1637655873093" alt="">
+            <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/091/300/6102091300_2_2_5.jpg?t=1629302135350" alt="">
+            <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/089/300/6102089300_2_3_5.jpg?t=1629302155775" alt="">
+            <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/089/300/6102089300_2_2_5.jpg?t=1629302155775" alt="">
+            <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/091/300/6102091300_2_5_5.jpg?t=1628516845271" alt="">
+            <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/089/300/6102089300_1_1_5.jpg?t=1637655873093" alt="">
+            <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/091/300/6102091300_2_2_5.jpg?t=1629302135350" alt="">
+            <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/089/300/6102089300_2_3_5.jpg?t=1629302155775" alt="">
+            <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/089/300/6102089300_2_2_5.jpg?t=1629302155775" alt="">
+            <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/091/300/6102091300_2_5_5.jpg?t=1628516845271" alt="">
+            <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/089/300/6102089300_1_1_5.jpg?t=1637655873093" alt="">
+            <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/091/300/6102091300_2_2_5.jpg?t=1629302135350" alt="">
+        </div>
+    </div>
+    <div id="pay">
+        <div id="Item">0 &nbsp;<span>ITEM</span></div>
+        <hr>
+        <div id="lText1">Total items: including tax</div>
+        <div id="rText1">107.97 &euro;</div>
+        <div id="lText1">Dilivery charges:</div>
+        <div id="rText1" style="margin-left: 110px;">45.00 &euro;</div>
+        <div id="lText2">TOTAL:</div>
+        <div id="rText2">107.97 &euro; *</div>
+        <div id="oops"><i class="fas fa-exclamation-triangle"></i>Oops! This code isn't valid</div>
+        <div id="apply"><i class="far fa-check-circle"></i>Congratulation! This Code is Apply</div>
+        <div id="cText" onclick="coupon()">DO YOU HAVE A PROMOTIONAL CODE? &nbsp;<i class="fas fa-tags"></i></div>
+        <div id="coupon">
+            <input type="text" id="couponText">
+            <button onclick="couponCode()">ADD CODE</button>
+        </div>
+        <button>CONTINUE</button>
+    </div>
+</body>
+</html>
+<script src="summery.js"></script>

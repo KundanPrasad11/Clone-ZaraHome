@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="payment.css">
+    <title>payment</title>
+</head>
+
+<body>
+    <div id="payDet">
+        <div id="head">PAYMENT DETAILS</div>
+        <hr>
+        <div id="pMethod">
+            <div><a href="#" id="paypal"> <img
+                        src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/new/8.svg?20211216030337"
+                        alt="payment logo"></a></div>
+            <div><a href="#" id="visa"> <img
+                        src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/new/1.svg?20211216030337"
+                        alt="payment logo"></a></div>
+            <div><a href="#" id="master"> <img
+                        src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/new/2.svg?20211216030337"
+                        alt="payment logo"></a></div>
+            <div><a href="#" id="amex"> <img
+                        src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/new/3.svg?20211216030337"
+                        alt="payment logo"></a></div>
+        </div>
+        <div class="cardOpt">
+
+            <div class="card-container">
+
+                <div class="front">
+                    <img id="mapI" src="images/map.png" alt="">
+                    <div class="image">
+                        <img src="images/chip.png" alt="">
+                        <img src="images/visa.png" alt="">
+                    </div>
+                    <div class="card-number-box">0000&nbsp;0000&nbsp;0000&nbsp;0000</div>
+                    <div class="flexbox">
+                        <div class="mbox">
+                            <span>Card Holder</span>
+                            <div class="card-holder-name">Full name</div>
+                        </div>
+                        <div class="mbox">
+                            <span>Expiry</span>
+                            <div class="expiration">
+                                <span class="exp-month">MM /</span>
+                                <span class="exp-year">YY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="back">
+                    <img id="mapI" src="images/map.png" alt="">
+                    <div class="stripe"></div>
+                    <img id="patt" src="images/pattern.png" alt="">
+                    <div class="mbox">
+                        <span>cvv</span>
+                        <div class="cvv-box"></div>
+                        <div id="backText">This card has been issused by jesse pollak and is licensed for anyone to use
+                            anywhere for free. <br> it comes with no warranty. For support issues, please visit
+                            github.com/jessepollak/card.</div>
+                        <img src="images/visa.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="Card number *" maxlength="16" class="card-number-input"
+                        style="margin-top: 0px;">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Name on card *" class="card-holder-input">
+                </div>
+                <div class="flexbox">
+                    <div class="inputBox">
+                        <span>Expiry date</span>
+                        <select name="" id="" class="month-input">
+                            <option value="month" selected disabled>Month *</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div class="inputBox" style="margin-top: 48px;">
+                        <select name="" id="" class="year-input">
+                            <option value="year" selected disabled>Year *</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <span>Security code</span>
+                        <input type="text" maxlength="3" class="cvv-input" placeholder="CVV *">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div id="pay">
+        <div id="Item">0 &nbsp;<span>ITEM</span></div>
+        <hr>
+        <div id="lText1">Total items: including tax</div>
+        <div id="rText1">107.97 &euro;</div>
+        <div id="lText1">Dilivery charges:</div>
+        <div id="rText1" style="margin-left: 110px;">45.00 &euro;</div>
+        <div id="lText2">TOTAL:</div>
+        <div id="rText2">107.97 &euro; *</div>
+        <div id="oops"><i class="fas fa-exclamation-triangle"></i>Oops! This code isn't valid</div>
+        <div id="apply"><i class="far fa-check-circle"></i>Congratulation! This Code is Apply</div>
+        <div id="cText" onclick="coupon()">DO YOU HAVE A PROMOTIONAL CODE? &nbsp;<i class="fas fa-tags"></i></div>
+        <div id="coupon">
+            <input type="text" id="couponText">
+            <button onclick="couponCode()">ADD CODE</button>
+        </div>
+        <button onclick="continuePay()">CONTINUE</button>
+    </div>
+</body>
+
+</html>
+<script>
+
+    var cNumberI = document.querySelector('.card-number-input');
+    var cNumberB = document.querySelector('.card-number-box');
+    cNumberI.oninput = () => {
+        cNumberB.innerText = cNumberI.value;
+    }
+
+    var cHolderI = document.querySelector('.card-holder-input');
+    var cHolderB = document.querySelector('.card-holder-name');
+    cHolderI.oninput = () => {
+        cHolderB.innerText = cHolderI.value;
+    }
+
+    var cMonthI = document.querySelector('.month-input');
+    var cMonthB = document.querySelector('.exp-month');
+    cMonthI.oninput = () => {
+        cMonthB.innerText = cMonthI.value + " /";
+    }
+
+    var cYearI = document.querySelector('.year-input');
+    var cYearB = document.querySelector('.exp-year');
+    cYearI.oninput = () => {
+        cYearB.innerText = cYearI.value;
+    }
+
+    var cCvvI = document.querySelector('.cvv-input');
+    var cFontB = document.querySelector('.front');
+    var cBackB = document.querySelector('.back');
+    cCvvI.onmouseenter = () => {
+        cFontB.style.transform = 'perspective(1000px) rotateY(-180deg)';
+        cBackB.style.transform = 'perspective(1000px) rotateY(0deg)';
+    }
+
+    cCvvI.onmouseleave = () => {
+        cFontB.style.transform = 'perspective(1000px) rotateY(0deg)';
+        cBackB.style.transform = 'perspective(1000px) rotateY(180deg)';
+    }
+
+    var cCvvB = document.querySelector('.cvv-box');
+    cCvvI.oninput = () => {
+        cCvvB.innerText = cCvvI.value;
+    }
+
+    function coupon() {
+        var coupon = document.querySelector('#coupon');
+        if (coupon.style.display === "none") {
+            coupon.style.display = "block";
+        } else {
+            coupon.style.display = "none";
+        }
+    }
+
+    function couponCode() {
+        var couText = document.getElementById('couponText').value;
+        if (couText == "ZARAHOME") {
+            document.getElementById('oops').style.display = "none";
+            document.getElementById('apply').style.display = "block";
+            document.querySelector('#coupon').style.display = "none";
+        } else {
+            document.getElementById('apply').style.display = "none";
+            document.getElementById('oops').style.display = "block";
+            document.querySelector('#coupon').style.display = "none";
+        }
+    }
+
+    function continuePay() {
+        var cardDetails = {
+            cardName: cNumberI.value,
+            cardHolderName: cHolderI.value,
+            cardMonth: cMonthI.value,
+            cardYear: cYearI.value,
+        }
+        localStorage.setItem("cardPaymentDet", JSON.stringify(cardDetails));
+    }
+</script>
