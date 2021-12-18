@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="courosel.css">
+</head>
+<body>
+    
+
+<div id="coutop">
+
+    <span id="closingbtn" class="close">&times;</span>
+
+    <div id="csbox" class="cs">
+    
+       <div class="cscontent">
+        
+    
+        <div class="container">
+           
+            <div class="courosel">
+               <div class="slider">
+                
+                  <section>
+                      <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/088/300/6102088300_2_7_1.jpg?t=1632324449360" alt="">
+                  </section>
+                  <section> 
+                      <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/088/300/6102088300_1_1_1.jpg?t=1629302155064" alt="">
+                  </section>
+                  <section>
+                      <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/088/300/6102088300_2_4_1.jpg?t=1629302155064" alt="">
+                  </section>
+                  <section>
+                      <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/091/300/6102091300_1_1_5.jpg?t=1637655873027" alt="">
+                  </section>
+                  <section> 
+                      <img src="https://static.zarahome.net/8/photos4/2021/I/4/1/p/6102/089/300/6102089300_1_1_5.jpg?t=1637655873093" alt="">
+                  </section>
+               </div>
+               <div class="controlls">
+                   <span class="arrow left"><i class="fas fa-chevron-left"></i></span>
+                   <span class="arrow right"><i class="fas fa-chevron-right"></i></span>
+               </div>
+            </div>
+          </div>
+    
+       </div>
+    
+    
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
+<script>
+let coutop=document.getElementById("coutop")
+
+
+let closingbtn=document.getElementById("closingbtn")
+closingbtn.addEventListener("click",closecourosel)
+
+function closecourosel(){
+coutop.style.display="none";
+
+}
+// courosel
+var slider=document.querySelector(".slider")
+var courosel=document.querySelector(".courosel")
+
+var left=document.querySelector(".left");
+var right=document.querySelector(".right")
+
+var direction;
+
+
+// left arrow
+left.addEventListener("click",function(){
+    if(direction==-1){
+        slider.appendChild(slider.firstElementChild);
+        direction= 1;
+    }
+ 
+    courosel.style.justifyContent="flex-end";
+    slider.style.transform="translate(20%)";
+   
+});
+// right arrow
+right.addEventListener("click",function(){
+   
+       
+        direction= -1;
+    
+
+    courosel.style.justifyContent="flex-start";
+    slider.style.transform="translate(-20%)";
+   
+});
+
+// slider part
+slider.addEventListener("transitionend",function(){
+    if(direction==-1){
+        slider.appendChild(slider.firstElementChild);
+    }else if(direction==1){
+        slider.prepend(slider.lastElementChild)
+    }
+ 
+
+     slider.style.transition="none";
+    slider.style.transform="translate(0%)";
+    setTimeout(function(){
+        slider.style.transition="all 0.5s";
+    })
+    
+})
+</script>
