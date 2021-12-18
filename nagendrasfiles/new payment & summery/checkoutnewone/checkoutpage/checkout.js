@@ -16,7 +16,7 @@ if(billlocal !== null){
    document.getElementById("dummybillnulldiv").style.display = "none";
    document.getElementById("billinglabel").innerText = "Send to the billing address";
 }
-
+localStorage.setItem("checkoutFlag", JSON.stringify(true));
 
 // this is checkbox  function------------->
  let popup  = (e) => { 

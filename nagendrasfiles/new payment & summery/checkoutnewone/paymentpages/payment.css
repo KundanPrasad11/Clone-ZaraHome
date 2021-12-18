@@ -1,3 +1,15 @@
+.right{
+
+  float: right;
+}
+
+.itemsdiv{
+
+  font-size: 14px;
+  margin-top: 10px
+}
+
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
@@ -39,40 +51,18 @@
   display: inline-block;
   vertical-align: top;
   font-family: "Poppins", sans-serif;
+  width: 100%;
 }
 #Item {
   font-weight: bold;
   font-size: 20px;
 }
 
-#lText1 {
-  border: 1px solid transparent;
-  font-size: 14px;
-  color: #1e1e1e;
-  margin-left: 10px;
-  display: inline-block;
-}
 
-#rText1 {
-  border: 1px solid transparent;
-  display: inline-block;
-  font-size: 14px;
-  color: #1e1e1e;
-  margin-left: 65px;
-}
+#totaldiv{
 
-#lText2 {
-  border: 1px solid transparent;
   font-weight: bold;
-  display: inline-block;
-  margin: 30px 0 0 10px;
-}
-
-#rText2 {
-  border: 1px solid transparent;
-  display: inline-block;
-  margin-left: 150px;
-  font-weight: bold;
+  margin-top: 20px;
 }
 
 #cText {
@@ -120,7 +110,8 @@
 
 #pay > button,
 #coupon > button {
-  padding: 10px 120px;
+width: 100%;
+height: 40px;
   margin-top: 35px;
   font-size: 12px;
   font-weight: bold;
@@ -227,7 +218,7 @@
 .cardOpt .card-container {
   border: 1px solid transparent;
   position: absolute;
-  right: 430px;
+  right: 35%;
   height: 250px;
   width: 400px;
 }
