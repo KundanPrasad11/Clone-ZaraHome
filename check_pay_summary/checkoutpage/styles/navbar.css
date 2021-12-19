@@ -1,0 +1,75 @@
+#ultimatenavcont{
+
+ 
+    /* border: 1px solid violet; */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+   
+ }
+
+#mainnavcheck{
+    /* border: 1px solid red; */
+    width: 95%;
+    margin: auto;
+    margin-top: 40px;
+    
+}
+
+#zara img{
+   
+    width: 300px;
+   
+}
+
+#basketcheck{
+
+    float: right;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+#basketcheck > p:hover{
+
+    color: grey;
+}
+
+#linesdiv{
+
+    display: flex;
+    margin-top: 40px;
+    
+}
+
+.hrdiv{
+    width: 33%;
+    color: rgb(189, 187, 187);
+    font-family: 'Kanit', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hrdiv hr{
+
+   border: 0;
+    border-bottom: 2px solid rgb(189, 187, 187);
+   
+}
+
+.highlight{
+
+    /* border: 1px solid blue; */
+    color: black;
+    font-family: 'Secular One', sans-serif;
+   
+   
+}
+
+.highlight hr{
+
+   border-bottom: 2px solid black;
+}

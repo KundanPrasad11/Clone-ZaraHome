@@ -1,0 +1,341 @@
+.right{
+
+  float: right;
+}
+
+.itemsdiv{
+
+  font-size: 14px;
+  margin-top: 10px
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+#checkoutleftdiv {
+  border: 1px solid transparent;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+#pricesdiv {
+  border: 1px solid transparent;
+  width: 25%;
+  height: 400px;
+  position: fixed;
+  right: 40px;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+#checkbodycont {
+  border: 1px solid transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#payDet {
+  border: 1px solid transparent;
+  width: 73%;
+  height: 500px;
+  display: inline-block;
+}
+
+#pay {
+  border: 1px solid transparent;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+#Item {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+#totaldiv{
+
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#cText {
+  font-size: 13px;
+  color: s#1e1e1e;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+#oops {
+  border: 1px solid red;
+  font-size: 13px;
+  margin-left: 5px;
+  width: 65%;
+  height: 25px;
+  margin-top: 10px;
+  color: #ff3b30;
+  background-color: #ffe3e3;
+  display: none;
+}
+#apply {
+  border: 1px solid rgb(15, 134, 134);
+  font-size: 13px;
+  margin-left: 5px;
+  width: 81%;
+  height: 25px;
+  margin-top: 10px;
+  color: #049ab4;
+  background-color: #c7f1f7;
+  display: none;
+}
+
+#oops > i,
+#apply > i {
+  padding: 5px;
+}
+
+#cText:hover {
+  color: #999;
+}
+
+#coupon {
+  display: none;
+}
+
+#pay > button,
+#coupon > button {
+width: 100%;
+height: 40px;
+  margin-top: 35px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: rgb(22, 20, 20);
+  color: rgb(243, 241, 241);
+  border: 0;
+}
+
+#coupon > input {
+  border: 0;
+  border-bottom: 1px solid black;
+  width: 96%;
+  margin-top: 20px;
+  outline: none;
+  padding-bottom: 5px;
+}
+
+#pay > button:hover,
+#coupon > button:hover {
+  background-color: #3d3d3d;
+}
+
+#head {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+
+#pMethod {
+  border: 1px solid transparent;
+  width: 62%;
+  height: 9%;
+  margin-top: 50px;
+}
+
+#pMethod > div {
+  border: 1px solid transparent;
+  vertical-align: top;
+  width: 11%;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 25px;
+  margin-right: 50px;
+  height: 100%;
+  display: inline-block;
+}
+
+#pMethod img {
+  width: 100%;
+  height: 100%;
+}
+.cardOpt {
+  border: 1px solid transparent;
+  width: 100%;
+  height: 350px;
+  margin-top: 70px;
+  display: flex;
+  flex-flow: column;
+}
+
+.cardOpt form {
+  border: 1px solid transparent;
+  background: transparent;
+  padding: 20px;
+  width: 50%;
+  margin-top: 0px;
+}
+
+.cardOpt form .inputBox span {
+  display: block;
+  color: #999;
+  padding-bottom: 30px;
+  font-size: 12px;
+}
+.inputBox {
+  border: 1px solid transparent;
+  width: 110%;
+}
+.cardOpt form .inputBox input,
+.cardOpt form .inputBox select {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  padding: 10px 0;
+  border: 0;
+  font-size: 12px;
+  outline: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  color: #444;
+}
+.cardOpt form .inputBox select {
+  height: 40px;
+}
+.cardOpt form .flexbox {
+  display: flex;
+  gap: 15px;
+  width: 110%;
+}
+
+.cardOpt form .flexbox .inputBox {
+  flex: 1 1 150px;
+}
+
+.cardOpt .card-container {
+  border: 1px solid transparent;
+  position: absolute;
+  right: 35%;
+  height: 250px;
+  width: 400px;
+}
+
+#mapI {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.cardOpt .card-container .front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* background: linear-gradient(45deg, blueviolet, deeppink); */
+  background-image: linear-gradient(45deg, #0045c7, #ff2c7d);
+  border-radius: 8px;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: transform 0.4s ease-out;
+}
+
+.cardOpt .card-container .front .image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.cardOpt .card-container .front .image img {
+  height: 50px;
+}
+
+.cardOpt .card-container .front .card-number-box {
+  padding: 30px 0;
+  font-size: 22px;
+  color: #fff;
+}
+
+.cardOpt .card-container .front .flexbox {
+  display: flex;
+}
+
+.cardOpt .card-container .front .flexbox .mbox:nth-child(1) {
+  margin-right: auto;
+}
+
+.cardOpt .card-container .front .flexbox .mbox {
+  font-size: 15px;
+  color: #fff;
+}
+
+.cardOpt .card-container .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(45deg, #0045c7, #ff2c7d);
+  border-radius: 8px;
+  padding: 20px 0;
+  text-align: right;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transform: perspective(1000px) rotateY(180deg);
+  transition: transform 0.4s ease-out;
+}
+
+.cardOpt .card-container .back .stripe {
+  background: #000;
+  width: 100%;
+  margin: 10px 0;
+  height: 50px;
+}
+
+.cardOpt .card-container .back .mbox {
+  padding: 0 20px;
+}
+
+.cardOpt .card-container .back .mbox span {
+  color: #fff;
+  font-size: 15px;
+}
+
+#backText {
+  border: 1px solid transparent;
+  font-size: 5px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.cardOpt .card-container .back .mbox .cvv-box {
+  border: 1px solid transparent;
+  height: 40px;
+  padding: 8px;
+  margin-top: 5px;
+  color: #333;
+  background: #fff;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#patt {
+  width: 84%;
+  position: absolute;
+  left: 0;
+  top: 117px;
+}
+
+.cardOpt .card-container .back .mbox img {
+  height: 30px;
+}

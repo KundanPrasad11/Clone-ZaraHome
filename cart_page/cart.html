@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <title>Shopping Basket</title>
+    <link rel="icon" href="../images/favicon.ico">
+</head>
+
+<body>
+    <div id="navB">
+        <div id="logo">
+            <div id="img1"><a href="../home_page/home.html"><img width="100%" height="100%"
+                src="https://static.zarahome.net/8/static4/itxwebstandard/logo/logo.png?t=202112110318092070005127"
+                alt="Zara Logo"></a></div>
+        </div>
+        <div id="sear">
+            <div>SEARCH</div>
+            <span>__________________</span>
+        </div>
+        <div id="Rside">
+            <span id="modallogin"><i style="padding-right: 8px;" class="far fa-user"></i>LOG IN</span> 
+            <span style="margin-right:0;"><i style="padding-right: 8px;" class="fas fa-shopping-bag"></i></span><span style="margin-left:0" id="basketCount">0</span>
+        </div>
+    </div>
+
+    <div id="cart_container">
+        <div id="mainB">
+            <button id = "basket">SHOPPING BASKET(0)</button>
+            <button id = "later">BUY LATER(0)</button>
+        </div>
+        <div id="card">
+            <div id="product"></div>
+        </div>
+        <div id="pay">
+            <div id="Item">0 &nbsp;<span>ITEM</span></div>
+            <hr>
+            <div id="lText1_div">
+              <div id="lText1">Total items: including tax</div>
+              <div id="total">0 &euro;</div>
+            </div>
+            <div #lText2_div>
+              <div id="lText2">TOTAL:</div>
+              <div id="total2">0 &euro; *</div>
+            </div>
+            <div id="cText">DO YOU HAVE A PROMOTIONAL CODE? Enter it when you reach the payment page</div>
+            <button id="btn">PROCESS ORDER</button>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="foo_container">
+            <div id="newsletter">
+                <p id="foo_task"> JOIN OUR NEWSLETTER - ENTER YOUR EMAIL ADDRESS</p>
+                <input type="email" onfocus="" name="newsletter" id="foo_input">
+            </div>
+            <div id="foo_social">
+                <div id="foo_social_left">
+                    <p>Follow us on</p>
+                    <div class="foo_social_icon">
+                        <div><a href="https://www.facebook.com/zarahome" target="blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111392.png" alt=""></a></div>
+                        <div><a href="https://www.instagram.com/zarahome/" target="blank"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt=""></a></div>
+                        <div><a href="https://www.pinterest.es/zarahome/" target="blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733622.png" alt=""></a></div>
+                        <div><a href="https://www.youtube.com/channel/UCrBndgD3vCicJ0nLRoKCCaA" target="blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384086.png" alt=""></a></div>
+                        <div><a href="https://twitter.com/zarahome" target="blank"><img src="https://cdn-icons.flaticon.com/png/512/3128/premium/3128212.png?token=exp=1639505038~hmac=305275f7cabc466e92e957cb4b11455f" alt=""></a></div>
+                        <div><a href="https://open.spotify.com/user/fbune3k41mta54xtdc3d8v7xu?si=FQQ6HDU7RZWT_yqDIVYAmw&nd=1" target="blank"><img src="https://cdn-icons.flaticon.com/png/512/717/premium/717421.png?token=exp=1639505062~hmac=e7663d5bb89631b0fb5818fd260e7496" alt=""></a></div>
+                    </div>
+                    
+                </div>
+                <div id="foo_social_right">
+                    <p>Download our app</p>
+                    <div class="foo_social_icon foo_social_icon_right">
+                        <div><a href="https://apps.apple.com/es/app/zarahome-shop-online/id474175190" target="blank"><img src="https://cdn-icons-png.flaticon.com/512/731/731985.png" alt=""></a></div>
+                        <div><a href="https://play.google.com/store/apps/details?id=com.inditex.ecommerce.zarahome.android" target="blank"><img src="https://cdn-icons-png.flaticon.com/512/152/152753.png" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="foo_about">
+                <div id="foo_about_left" class="foo_about_items">
+                    <h6 class="foo_about_header"> POLICIES</h6>
+                    <ul class="foo_about_list">
+                        <li>TERMS AND CONDITIONS</li>
+                        <li>PRIVACY POLICY</li>
+                        <li>COOKIES POLICY</li>
+                        <li>COOKIES SETTINGS</li>
+                        <li>LEGAL MENTIONS</li>
+                    </ul>
+                </div>
+                <div id="foo_about_center" class="foo_about_items">
+                    <h6 class="foo_about_header"> COMPANY</h6>
+                    <ul class="foo_about_list">
+                        <li>WORK WITH US</li>
+                        <li>PRESS</li>
+                    </ul>
+                </div>
+                <div id="foo_about_right" class="foo_about_items">
+                    <h6 class="foo_about_header"> CONTACT</h6>
+                    <ul class="foo_about_list">
+                        <li>CONTACT US</li>
+                        <li>GUEST PURCHASE</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="cart.js"></script>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Zara Home Worldwide</title>
+    <link rel="icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400&family=Secular+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@200;300&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/28e3ee16ef.js" crossorigin="anonymous"></script>
+
+<body>
+    <header>
+        <div id="ultimatenavcont"></div>
+    </header>
+
+    <div id="checkbodycont">
+        <div id="checkoutleftdiv">
+            <h3 class="highlight">STANDARD</h3>
+            <hr>
+
+            <input type="radio"><span> The estimated delivery time will be between 7-10 working days, depending on the
+                delivery address.</span> <span class="delcharge">45.00 € </span>
+            <div id="emergediv"></div>
+            <p class="highlight extras" id="addchange">DELIVERY ADDRESS</p>
+            <input type="checkbox" id="billing" checked><label for="" id="billinglabel">Use as billing address</label>
+
+            <div id="dummybillnulldiv">
+                <div class="radiodiv"> &emsp; <input type="radio" checked id="indivi"><label for="">Individual</label>
+                    &emsp; <input type="radio" id="company"> <label for="">Company</label>
+                </div>
+
+                <form action="">
+                    <select name="" id="">
+                        <option value="tee">-------</option>
+                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                        <option value="Anguilla">Anguilla</option>
+                        <option value="American Samoa">American Samoa</option>
+                        <option value="Barbados">Barbados</option>
+                        <option value="Burkina Faso">Burkina Faso</option>
+                        <option value="Cape Verde">Cape Verde</option>
+                        <option value="Cocos Islands">Cocos Islands</option>
+                        <option value="Dominica">Dominica</option>
+                        <option value="India">India</option>
+                    </select>
+
+                    <input type="text" placeholder="Email*" id="billemail">
+                    <input type="text" placeholder="Name*" id="billName">
+                    <input type="text" placeholder="Surname(s)*" id="billsurname">
+                    <input id="changein" type="text" placeholder="Tax ID number">
+                    <input id="vatin" type="text" placeholder="Vat">
+                    <input type="text" placeholder="Province">
+                    <input type="text" placeholder="Address*" id="billadd">
+                    <input type="text" placeholder="More info">
+                    <input type="text" placeholder="Floor/door/etc. *" id="billdoor">
+                    <input type="text" placeholder="Postcode">
+                    <input type="text" placeholder="City*" id="billcity">
+                    <input type="text" placeholder="Telephone*" id="billtele">
+                </form>
+            </div>
+            <div id="extradivbillblock"></div>
+        </div>
+        <div id="pricediv">
+            <h3 class="highlight" id="NumItems">2 ITEMS</h3>
+            <hr>
+
+            <div> <span>Total items: including tax</span> <span class="prices" id="totallocal">45€</span></div>
+            <div><span>Delivery charges:</span> <span class="prices">45€</span></div>
+            <div><span>Import costs:</span> <span class="prices">56.43 € </span></div>
+            <div id="totaldiv"><span>TOTAL:</span> <span class="prices" id="oritotal">45€</span></div>
+            <p>DO YOU HAVE A PROMOTIONAL CODE? Enter it when you reach the payment page</p>
+
+            <button class="newaddbtn " id="addcontbtn">CONTINUE</button>
+        </div>
+    </div>
+    <div id="blackdiv">
+        <div id="popdiv">
+            <button id="crossbtn">
+                <div id="cross1">
+                    <div id="cross2"></div>
+                </div>
+            </button>
+            <form action="">
+                <select name="" id="">
+                    <option value="tee">-------</option>
+                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                    <option value="Anguilla">Anguilla</option>
+                    <option value="American Samoa">American Samoa</option>
+                    <option value="Barbados">Barbados</option>
+                    <option value="Burkina Faso">Burkina Faso</option>
+                    <option value="Cape Verde">Cape Verde</option>
+                    <option value="Cocos Islands">Cocos Islands</option>
+                    <option value="Dominica">Dominica</option>
+                    <option value="India">India</option>
+                </select>
+                <input type="text" placeholder="Name" id="delName">
+                <input type="text" placeholder="Surname(s)" id="delsurname">
+                <input type="text" placeholder="Province">
+                <input type="text" placeholder="Address*" id="deladd">
+                <input type="text" placeholder="More info">
+                <input type="text" placeholder="Floor/door/etc." id="deldoor">
+                <input type="text" placeholder="Postcode">
+                <input type="text" placeholder="City*" id="delcity">
+                <input type="text" placeholder="Telephone*" id="deltele">
+            </form>
+
+            <button class="newaddbtn acceptbtn" id="popacceptbtn">ACCEPT</button>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+<script type="module">
+
+    import navcheck from "./components/navbarcheck.js";
+    import { pricediv } from "./components/pricediv.js";
+
+    let cont = document.getElementById("ultimatenavcont");
+    cont.innerHTML = navcheck();
+
+    // let rightdiv = document.getElementById("pricediv");
+    //     rightdiv.innerHTML = pricediv();
+
+    let countedItems = JSON.parse(localStorage.getItem("countItem"));
+
+    document.getElementById("basketnum").innerText = `(${countedItems})`;
+
+
+</script>
+
+<script src="checkout.js"></script>

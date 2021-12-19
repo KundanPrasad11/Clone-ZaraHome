@@ -1,0 +1,108 @@
+#coutop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5); 
+}
+
+
+.cs{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 99.8%;
+    height: 99.5%;
+    background: rgba(0,0,0,0.5);
+    margin: auto;
+    /* display: none; */
+
+}
+.cs .cscontent{
+    
+    width:100%;
+    height:100%;
+    border: 1px solid grey;
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform:translate(-50%,-50%);
+   background:white;
+   z-index:999;
+ 
+   /* animation-name: modalopen;
+   animation-duration: 1s; */
+}
+.close{
+ 
+    font-size: 70px;
+     cursor: pointer;
+     display: block;
+     float: right;
+     padding: 0 20px;
+}
+
+
+
+/* courosel */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    
+}
+.courosel{
+ width: 100%;
+    height: 98%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content:flex-start;
+    position: relative;
+    overflow: hidden ;
+}
+.slider{
+    display: flex;
+    height: 100%;
+    width: 500%;
+ flex-shrink: 0;
+/* border: 1px solid blue; */
+transition: all .5s;
+    
+}
+.slider section{
+    /* border: 1px solid gray; */
+    flex-basis: 100%;
+    width: 20%;
+     flex: 1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  
+    }
+    .slider section>img{
+        width: 100%;
+        height: 100%;
+        /* background-size: cover; */
+  
+    
+ 
+    }
+    .arrow{
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        font-weight: 100;
+    }
+    .arrow.left{
+        left: 10px;
+    }
+    .arrow.right{
+        right: 10px;
+    }

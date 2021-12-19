@@ -1,0 +1,30 @@
+#addCart {
+    border-left: 1px solid black;
+    width: 350px;
+    position: fixed;
+    top: 0;
+    /* right: 0; */
+    right: -400px;
+    min-height: 650px;
+    background-color: white;
+    transition: right 0.7s ease;
+}
+
+#addCart>i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#addCart>button {
+    padding: 8px 100px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    border: 0;
+    font-weight: bold;
+}
+

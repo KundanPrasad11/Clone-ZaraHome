@@ -1,0 +1,64 @@
+.siz {
+  cursor: pointer;
+}
+  
+  .popsize {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  .popsize .popcontent {
+    padding: 0px 30px;
+  
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    z-index: 999;
+    animation-name: modalopen;
+    animation-duration: 1s;
+  }
+  .close {
+    float: right;
+    font-size: 50px;
+    cursor: pointer;
+  }
+  
+  #duet {
+    margin-top: 50px;
+  }
+  #popflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: evenly;
+  
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 80%;
+  }
+  #popflex > .popflex1 {
+    /* border: 1px solid blue; */
+    width: 25%;
+    margin-right: 8%;
+  }
+  .popcom {
+    font-size: 13px;
+    margin-top: 25px;
+    font-family: sans-serif;
+    font-weight: 500;
+  }
+  .popcom1 {
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    color: #b9c0c3;
+  }
