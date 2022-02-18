@@ -5,7 +5,7 @@
 <p>Akbar Basha Shaik</p>
 <p>Surendra Rout</p>
 <p>Nagendra Murlidhar Pulla</p>
-<p>Jenish Kathrodia</p>
+<p>Jenish Kathrotiya</p>
 
 <h3>Languages and Tools Used:</h3>
 <p>HTML</p>
