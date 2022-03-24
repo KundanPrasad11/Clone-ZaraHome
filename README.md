@@ -1,4 +1,4 @@
-# Croma Clone
+# Zara-Home Clone
 
 <h3>Team Members</h3>
 <p>Kundan Kumar Prasad</p>
